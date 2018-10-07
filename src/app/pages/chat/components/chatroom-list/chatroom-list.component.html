@@ -1,0 +1,24 @@
+<div class="h-100 d-flex flex-column chatroom-list" *ngIf="auth.currentUserSnapshot.firstName=='Nishtha'">
+  <ng-container>
+    <div class="chatroom-list-item">
+      <a [routerLink]="['/chat', 'vu1uOS6OgNsUTATajmay' ]" routerLinkActive="active">Neeraj</a>
+    </div>
+    <div class="chatroom-list-item">
+        <a [routerLink]="['/chat', '8HbP57vrW7y7or0LeRJb']" routerLinkActive="active">Rajat</a>
+    </div>
+  </ng-container>
+</div>
+<div class="h-100 d-flex flex-column chatroom-list" *ngIf="auth.currentUserSnapshot.firstName=='Neeraj'">
+  <ng-container>
+    <div class="chatroom-list-item">
+      <a [routerLink]="['/chat', 'vu1uOS6OgNsUTATajmay']" routerLinkActive="active">Nishtha</a>
+    </div>
+  </ng-container>
+</div>
+<div class="h-100 d-flex flex-column chatroom-list" *ngIf="auth.currentUserSnapshot.firstName=='Rajat'">
+  <ng-container>
+    <div class="chatroom-list-item">
+      <a [routerLink]="['/chat','8HbP57vrW7y7or0LeRJb']" routerLinkActive="active">Nishtha</a>
+    </div>
+  </ng-container>
+</div>
